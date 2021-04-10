@@ -267,3 +267,4 @@ cloudinary.config(
   api_secret = 'WXebvm4LcndVc6n5aUHWtRp0vB8' 
 )
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

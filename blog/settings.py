@@ -254,7 +254,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static_cdn", "static_root")
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "static_cdn", "media_root")
-
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 
