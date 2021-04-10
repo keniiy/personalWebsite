@@ -1,0 +1,21 @@
+{% if messages %}
+    {% for message in messages %}
+        <div id="message" class="">
+            <div style="margin-bottom:0rem;" class="alert alert-{{ message.tags }} alert-dismissible text-center" role="alert">
+                <strong>
+                    {% if message.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+                        Error:
+                    {% else %}
+                        {{ message }}
+                    {% endif %}
+                </strong>
+            </div>
+        </div>
+        <script>
+        //Automatically fade out messages
+        setTimeout(function() {
+            $('#message').fadeOut('slow')
+        }, 5000);
+        </script>
+    {% endfor %}
+{% endif %}

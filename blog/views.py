@@ -4,6 +4,7 @@ from blog_contact.forms import ContactForm
 from blog_contact.models import Contact
 from blog_blog.models import Post
 from blog_info.models import PersonalInfo
+from django.contrib import messages
 
 
 
@@ -22,6 +23,7 @@ def home_page(request):
             
         Contact.objects.create(fullname=fullname, email=email, phone=phone, subject=subject, text=text, is_read=False)
         contact_form = ContactForm()
+        messages.success(request, 'Thanks, Would Get Back To You Shortly')
     
     blog_posts = Post.objects.get_published().order_by('-publish')[:5]
         
