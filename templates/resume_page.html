@@ -1,0 +1,204 @@
+{% extends 'shared/_MainLayout.html' %}
+{% load static %}
+{% block content %}
+
+        <section id="section2">
+            <div class="container">
+
+                <div class="heading">
+                    <h2>About Me</h2>
+                </div>
+                <div class="row">
+                    
+                    <div class="col-lg-16">
+                        <img src="{{personal_info.image.url}}" class="avatar avatar-lg" style="margin-top: -40px;">
+                        </div>
+                    <div class="col-lg-10">
+                        <h3>{{personal_info.name}}</h3> 
+                        
+                        <p style="text-align: justify;">{{personal_info.about}}</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+<hr>
+        <section id="section2">
+            <div class="container">
+
+                <div class="heading">
+                    <h2>EDUCATION</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 border-right">
+                        <h3>Primary School</h3>
+                        <h4 class="m-b-0">JChildren House Comprehensive College</h4>
+                        <p>2001 - 2004</p>
+                        <p>Student of the year for three years in a row</p>
+                    </div>
+                    <div class="col-lg-3 border-right">
+                        <h3>Senior High School</h3>
+                        <h4 class="m-b-0">Gec Comprehensive College</h4>
+                        <p>2005-2011</p>
+                        <p>Student of the year award in 2015</p>
+                    </div>
+                    <div class="col-lg-3 border-right">
+                        <h3>National Diploma</h3>
+                        <h4 class="m-b-0">Moshood Abiola Polytechnic</h4>
+                        <p>2013-2015</p>
+                        <p>Marketing Degree</p>
+                    </div>
+                    <div class="col-lg-3 border-right">
+                        <h3>Bachelor Degree</h3>
+                        <h4 class="m-b-0">(LASU) Lagos State University</h4>
+                        <p>2016-2021</p>
+                        <p>Marketing Degree</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr> -->
+  
+        <section class="background-white">
+            <div class="container">
+             <div class="heading">
+                            <h2>Skills</h2>
+                        </div>
+                <div class="row carousel-description-clients carousel-description-style ">
+                    <div class="col-lg-12">
+                        <div class="carousel client-logos" data-items="5">
+
+                            <div>
+                                <img alt="" src="{% static 'images/python.png'%}" >
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/django.png'%}" style="width:280px; height:200px;margin-top:-18px;margin-left: -45px;">
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/csharp.png'%}" style="margin-left: 20px;">
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/c.png'%}" style="width:160px; height:160px;margin-left: 20px;">
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/html.png'%}" style="height: 150px;margin-top: -8px;">
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/css.png'%}" style="height: 157px;margin-top: -10px;width: 153px;">
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/regex.jpg'%}" style="width: 200px;margin-top: 13px;margin-left: -20px;">
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/sqlite.png'%}" style="width:180; margin-top: 35px;">
+                            </div>
+                            <div>
+                                <img alt="" src="{% static 'images/mysql.png'%}" style="width:250; margin-top: 20px;">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                    <!--Medium size progress bar-->
+        <section>
+            <div class="container">
+                <div class="heading">
+                            <h2>Skills</h2>
+                        </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="p-progress-bar-container title-up medium">
+                            <div class="p-progress-bar" data-percent="99" data-delay="100" data-type="%">
+                                <div class="progress-title">Node.JS</div>
+                            </div>
+                        </div>  
+                         <div class="p-progress-bar-container title-up medium">
+                            <div class="p-progress-bar" data-percent="99" data-delay="200" data-type="%">
+                                <div class="progress-title">Python</div>
+                            </div>
+                        </div>
+                        <div class="p-progress-bar-container title-up medium">
+                            <div class="p-progress-bar" data-percent="99" data-delay="300" data-type="%">
+                                <div class="progress-title">Javascript</div>
+                            </div>
+                        </div>
+                        <div class="p-progress-bar-container title-up medium">
+                            <div class="p-progress-bar" data-percent="99" data-delay="400" data-type="%">
+                                <div class="progress-title">Django</div>
+                            </div>
+                        </div>
+                        <div class="p-progress-bar-container title-up medium">
+                            <div class="p-progress-bar" data-percent="99" data-delay="500" data-type="%">
+                                <div class="progress-title">Flask</div>
+                            </div>
+                        </div>
+                        <div class="p-progress-bar-container title-up medium">
+                            <div class="p-progress-bar" data-percent="99" data-delay="600" data-type="%">
+                                <div class="progress-title">MongoDb</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="p-progress-bar-container radius medium title-up">
+                            <div class="p-progress-bar" data-percent="99" data-delay="1000" data-type="%">
+                                <div class="progress-title">MySql</div>
+                            </div>
+                        </div>
+                        <div class="p-progress-bar-container radius medium title-up">
+                            <div class="p-progress-bar" data-percent="99" data-delay="1100" data-type="%">
+                                <div class="progress-title">Express</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>   <!--END: Medium size progress bar-->
+        <hr>
+        <!-- CV -->
+        <section id="section4">
+
+            <div class="container">
+                <div class="heading">
+                    <h2>CV</h2>
+                    {% comment %} <span class="lead">I love to put mysel.</span> {% endcomment %}
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 border-left">
+                        <h3>FreeLancer.com</h3>
+                        <h4 class="m-b-0">Python Full-Stack Web Dev</h4>
+                        <p>Since 2016</p>
+                        <p>I've always loved working on projects that challenge my knowledge and make me learn new things Which i learned a lot while freelancing on freelancer.com.
+                        </p>
+
+                        <div class="seperator"></div>
+
+                        <h3>Mahealth</h3>
+                        <h4 class="m-b-0">BackEnd Node.Js Dev Freelancer</h4>
+                        <p>Jan 2021 - Present</p>
+                        <p> The most amazing job i ever G]got it was a great learning Experience For Me
+                        </p>
+                        <div class="seperator"></div> 
+                    </div>
+                    <div class="col-lg-6 border-left">
+                        <h3>ALLSTEM</h3>
+                        <h4 class="m-b-0">Python Full-Stack Web Dev</h4>
+                        <p>July 2020 - Jan 2021</p>
+                        <p>A very fascinating journey from been the role of an intern to a team lead. </p>
+
+                        <div class="seperator"></div>
+
+                        <h3>HASH ANALYTIC</h3>
+                        <h4 class="m-b-0">Machine Learning Engineer Intern</h4>
+                        <p>Jan 2020 – March 2020</p>
+                        <p> As An Intern it was wonderful learning experience been introduces into the world of machine learning through python. 
+                        </p>
+                        <div class="seperator"></div> 
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- end: CV -->
+{% endblock content %}
