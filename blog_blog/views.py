@@ -9,6 +9,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db.models import Count
 from blog_info.models import PersonalInfo
 from blog_blog.forms import PostForm
+from django.contrib import messages
 
 
 def blog_paginator(request, posts, page_number):
@@ -105,6 +106,7 @@ def post_detail(request, *args, **kwargs):
             body = comment_form.cleaned_data.get('body')
             Comment.objects.create(name=name, email=email, body=body, post=post )
             comment_form = CommentForm()
+            messages.success(request, 'Thanks for taking your time to read through and leaving a comment🥺.')
             return redirect(post.get_absolute_url())
     else:
         comment_form = CommentForm()
