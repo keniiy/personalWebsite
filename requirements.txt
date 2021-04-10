@@ -26,4 +26,3 @@ surlex==0.2.0
 unicodecsv==0.14.1
 urllib3==1.26.2
 whitenoise==5.2.0
-python-dotenv
