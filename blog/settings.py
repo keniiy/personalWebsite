@@ -247,13 +247,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(PROJECT_ROOT, "assets")
+    os.path.join(BASE_DIR, "assets")
 ]
 
-STATIC_ROOT = os.path.join(PROJECT_ROOT, "static_cdn", "static_root")
+STATIC_ROOT = os.path.join(BASE_DIR, "static_cdn", "static_root")
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(PROJECT_ROOT, "static_cdn", "media_root")
+MEDIA_ROOT = os.path.join(BASE_DIR, "static_cdn", "media_root")
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
